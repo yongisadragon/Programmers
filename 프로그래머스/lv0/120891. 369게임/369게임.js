@@ -1,3 +1,3 @@
 function solution(order) {
-    return (order.toString().match(/[369]/g) ?? []).length;
+    return ((''+order).match(/[369]/g) ?? []).length;
 }
