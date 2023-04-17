@@ -1,5 +1,3 @@
 function solution(order) {
-
-    let newSet = new Set([3,6,9]);
-    return order.toString().split('').filter(el=>newSet.has(parseInt(el))).length;
+    return String(order).split(/[369]/g).length - 1;
 }
