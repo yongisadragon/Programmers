@@ -1,3 +1,3 @@
 function solution(n){
-    return (n+'').split('').reduce((a,c)=>a+parseInt(c),0)
+    return (n+'').split('').reduce((a,c)=>a+c*1,0)
 }
