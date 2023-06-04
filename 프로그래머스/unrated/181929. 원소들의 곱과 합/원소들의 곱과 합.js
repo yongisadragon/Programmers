@@ -1,9 +1,5 @@
 function solution(num_list) {
-    let sum = 0;
-    let multi =1;
-   for(const i of num_list) {
-       sum += i
-       multi *= i
-   }
-   return multi < sum*sum ? 1:0;
+    let sum = num_list.reduce((a,c)=>  a+c,0);
+    let mul = num_list.reduce((a,c)=>  a*c,1);
+   return (mul < sum*sum) ? 1:0;
 }
