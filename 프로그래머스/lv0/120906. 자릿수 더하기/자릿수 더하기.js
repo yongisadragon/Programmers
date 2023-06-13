@@ -1,3 +1,3 @@
 function solution(n) {
-   return n.toString().split('').reduce((a,c)=>parseInt(a)+parseInt(c),0)
+   return n.toString().split('').map(v=>+v).reduce((a,c)=>a+c,0)
 }
