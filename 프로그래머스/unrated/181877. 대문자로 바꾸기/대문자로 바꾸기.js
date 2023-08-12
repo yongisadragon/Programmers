@@ -1,4 +1,1 @@
-function solution(myString) {
- return myString.toUpperCase()
-
-}
+let solution = (s) => s.toUpperCase();
