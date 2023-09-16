@@ -1,4 +1,4 @@
 function solution(num_list) {
     let leng = num_list.length
-    return leng>=11 ? num_list.reduce((a,c)=>a+c) : num_list.reduce((a,c)=>a*c)
+    return num_list.reduce((a,c)=> leng >=11 ? a+c : a*c)
 }
