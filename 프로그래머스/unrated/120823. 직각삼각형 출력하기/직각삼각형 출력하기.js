@@ -11,11 +11,7 @@ rl.on('line', function (line) {
 }).on('close', function () {
     let num = Number(input[0]);
     let star = '';
-    for (let i = 0; i < num; i++){
-        for(let j =0; j <= i; j++){
-            star += '*'
-        }
-            star += '\n'
+    for (let i = 1; i <= num; i++){
+        console.log('*'.repeat(i))
     }
-    console.log(star)
 });
