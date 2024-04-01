@@ -1,1 +1,1 @@
-const solution = (myString,isSuffix) => myString.endsWith(isSuffix)? 1:0;
+const solution = (myString,isSuffix) => myString.slice(myString.length-isSuffix.length)==isSuffix? 1:0;
